@@ -95,7 +95,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); // invert the current state of the pin
+	  HAL_Delay(500); // wait for 500 ms
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
